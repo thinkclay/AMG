@@ -1,0 +1,218 @@
+<style type="text/css">
+@media only screen and (max-width: 480px) {
+  .responsive-table {
+    width: 100% !important;
+  }
+
+  .column {
+    display: block !important;
+    padding-bottom: 15px;
+    width: 100% !important;
+  }
+}
+@media only print {
+  .no-print {
+    display: none;
+  }
+}
+</style>
+<style type="text/css" media="print">
+.no-print {
+  display: none;
+}
+</style>
+
+<center>
+  <table summary="" bgcolor="#eeeeee" width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="font-family:Lato,Arial,sans-serif;">
+    <tbody>
+      <tr>
+        <td align="center">
+          <center>
+            <table summary="" cellspacing="0" cellpadding="0" align="center" style="margin-top:0;margin-bottom:0;margin-left:auto;margin-right:auto;max-width:580px;">
+              <tr class="no-print">
+                <td align="center" width="100%" bgcolor="#555555" style="font-size:12px;font-weight:bold;background:#555;color:#fff;text-align:center;padding:10px;font-family:Arial,sans-serif;">
+                  This is a system generated message.
+                </td>
+              </tr>
+
+              <tr class="no-print">
+                <td align="center" width="100%" bgcolor="#EE1C25" style="color:#fff;font-weight:bold;font-size:14px;padding-top:12px;padding-bottom:12px;padding-left:25px;padding-right:25px;">
+                  Vacation Offer | Purchase Confirmation
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="#C23034" style="font-size:3px;height:3px;">&nbsp;</td>
+              </tr>
+
+              <tr class="no-print">
+                <td align="center">
+                  <img src="https://s3-us-west-2.amazonaws.com/a9e7yti-images/et_u7609_g3277_001_2b_header" alt="" style="max-width:580px;margin-left:auto;margin-right:auto;display:block;" width="100%" />
+                </td>
+              </tr>
+
+              <tr>
+                <td valign="top" align="center" bgcolor="#FFFFFF" style="text-align:center;padding:25px;">
+                  <span style="font-weight:normal;font-size:22px;font-weight:300;">
+                    Dear ${Packages.First Name} ${Packages.Spouse First Name},
+                  </span>
+
+                  <br/>
+                  <br/>
+
+                  <span style="font-weight:400;font-size:14px;line-height:22px;">
+                    We are excited for the opportunity to introduce you to Las Vegas, NV.
+                    We are happy to inform you that we have your vacation package on 'open' status for Las Vegas.
+                    To set your dates please call us at the below toll free number and a vacation specialist
+                    will assist you with your request. Please review the following reservation information carefully.
+                  </span>
+                </td>
+              </tr>
+
+              <tr>
+                <td valign="top" bgcolor="#F7F7F7" style="background:#f7f7f7;text-align:center;padding:25px;line-height:20px;">
+                  <strong style="line-height:22px;display:block;padding-bottom:6px;">Please review the following reservation information carefully:</strong>
+                  <span style="color:#999;font-size:11px;line-height:14px;">This will appear on your billing statement as:</span>
+                  <br/>
+                  <strong style="display:block;">Allen Marketing Group</strong>
+                  <span style="font-size:11px;">(Servicer of this Package)</span>
+                  <br/>
+                  <br/>
+
+                  <table summary="" width="100%" cellspacing="0" cellpadding="0" style="white-space:nowrap;text-align:left;">
+                    <tr>
+                      <th style="border-bottom:1px solid #ddd;padding:10px;background:#f0f0f0;text-align:left;font-size:12px;">Package Confirmation</th>
+                      <td style="border-bottom:1px solid #ddd;padding:10px;background:#fbfbfb;text-align:left;font-size:12px;">${Packages.Package Code}</td>
+                    </tr>
+                    <tr>
+                      <th style="border-bottom:1px solid #ddd;padding:10px;background:#f0f0f0;text-align:left;font-size:12px;">Credit Card Confirmation</th>
+                      <td style="border-bottom:1px solid #ddd;padding:10px;background:#fbfbfb;text-align:left;font-size:12px;">${Packages.Authorization Code}</td>
+                    </tr>
+                  </table>
+
+                  <br/>
+                  <br/>
+
+                  <strong style="line-height:22px;display:block;padding-bottom:6px;">
+                    Your package may be used to travel to the following destinations:
+                  </strong>
+
+                  <table summary="" bgcolor="#fafafa" cellpadding="0" cellspacing="0" width="100%" align="center" style="background:#fafafa;font-size:14px;border-width:1px;border-style:dashed;border-color:#CC3300;padding:20px;border-radius:5px;text-align:center;">
+                    <tr>
+                      <td width="49%" style="text-align:left;">
+                        <span style="color:#999;font-size:11px;line-height:20px;">DESTINATIONS:</span>
+                        <br/>
+                        <span style="font-size:12px;line-height:18px;">
+                          Las Vegas, NV<br/>
+                          Williamsburg, VA<br/>
+                          Orlando, FL<br/>
+                          Branson, MO<br/>
+                          Myrtle Beach, SC<br/>
+                          Charleston, SC<br/>
+                          New Smyrna Beach, FL<br/>
+                        </span>
+                      </td>
+                      <td width="2%">&nbsp;</td>
+                      <td width="49%" style="text-align:left;font-size:11px;">
+                        <span style="color:#999;font-size:11px;line-height:20px;">Your reservation includes the following:</span>
+                        <br/>
+                        <strong style="line-height:22px;display:block;padding-bottom:6px;">${Packages.Length of Stay}</strong>
+                        <br/>
+                        <span style="color:#999;font-size:11px;line-height:20px;">This package is valid ${Packages.TravelTime(Months)} months from the date of purchase:</span>
+                        <br/>
+                        <strong style="line-height:22px;display:block;padding-bottom:6px;">${Packages.Date Sold}</strong>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <br/>
+
+                  <table summary="" bgcolor="#fafafa" cellpadding="0" cellspacing="0" width="100%" align="center" style="background:#fafafa;font-size:14px;border-width:1px;border-style:dashed;border-color:#CC3300;padding:20px;border-radius:5px;text-align:center;">
+                    <tr>
+                      <td width="49%" style="text-align:left;">
+                        <span style="color:#999;font-size:11px;line-height:20px;">COMPLIMENTARY GIFTS:</span>
+                        <br/>
+                        <span style="font-size:12px;line-height:18px;">
+                          For taking advantage of our offer today we have provided you with the following gifts,
+                          in addition to your stay!
+                        </span>
+                      </td>
+                      <td width="2%">&nbsp;</td>
+                      <td width="49%" style="text-align:left;font-size:11px;">
+                        <strong style="line-height:22px;">
+                          8/7 Vacation of a Lifetime<br/>
+                          4/3 Passage to Fun Cruise<br/>
+                          $100 Dining Dough<br/>
+                        </strong>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+              <tr class="no-print">
+                <td valign="top" bgcolor="#FFFFFF" style="text-align:center;padding-top:25px;padding-bottom:25px;">
+                  <h3 style="font-size:24px;font-weight:300;line-height:18px;color:#2C3E50;margin:0px;">Thank You!</h3>
+                  <span style="color:#999;font-size:11px;line-height:20px;">Your business is greatly appreciated</span>
+                  <br/>
+                  <img src="https://s3-us-west-2.amazonaws.com/a9e7yti-images/et_u6014_g2532_001_2b_footer" alt="&nbsp;" width="100%" style="max-width:580px;margin-left:auto;margin-right:auto;display:block;" />
+                  <br/>
+                  Please contact us soon to reserve your dates.
+                  <strong style="line-height:22px;display:block;padding-bottom:6px;">For Questions &amp; Booking Call: 866-551-0868</strong>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top" bgcolor="#F7F7F7" style="font-size:10px;background: #f7f7f7;line-height:13px;text-align:center;padding-top:25px;padding-bottom:5px;">
+                  <strong style="font-size: 12px;">Offer Terms &amp; Conditions</strong><br/><br/>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top" bgcolor="#F7F7F7" style="background: #f7f7f7;text-align:justify;padding-left:25px;padding-right:25px;padding-bottom:25px;font-size:10px;color:#999;">
+                  ${TC.CustomerCare}
+                  <br/><br/>
+                  ${TC.Promotion}
+                  <br/><br/>
+                  ${TC.Redeemable}
+                  <br/><br/>
+                  ${TC.Incidentals}
+                  ${TC.Restrictions}
+                  ${TC.Rescheduling}
+                  ${TC.Provisions}
+                  <br/><br/>
+                  ${TC.Disclaimer}
+                  <br/><br/>
+                  ${TC.Contact}
+                  <br/><br/>
+                  ${TC.Privacy}
+                </td>
+              </tr>
+
+              <tr class="no-print">
+                <td valign="top" bgcolor="#EE1C25" style="line-height:1.4em;color: #fff;font-size:10px;background:#EE1C25;">
+                  <table summary="" cellpadding="0" cellspacing="0" width="100%" style="width:100%;">
+                    <tbody>
+                      <tr>
+                        <td width="50%" style="color:#fff;font-size:10px;padding:25px;text-align:left;">
+                          This email was delivered to: ${Packages.Email}<br/>
+                          Uniqie Package Identifier: ${Packages.Package Code}
+                        </td>
+
+                        <td width="50%" style="text-align:right;color:#fff;font-size:10px;padding:25px;">
+                          &copy; 2016 Allen Marketing Group<br/>
+                          164 West Center Street<br/>
+                          Cedar City, Utah 84720
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr class="no-print">
+                <td bgcolor="#C23034" style="font-size:8px;height:8px;">&nbsp;</td>
+              </tr>
+            </table>
+          </center>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</center>
