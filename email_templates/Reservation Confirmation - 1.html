@@ -1,0 +1,179 @@
+<style type="text/css">
+@media only screen and (max-width: 480px) {
+  .responsive-table {
+    width: 100% !important;
+  }
+
+  .column {
+    display: block !important;
+    padding-bottom: 15px;
+    width: 100% !important;
+  }
+}
+@media only print {
+  .no-print {
+    display: none;
+  }
+}
+</style>
+<style type="text/css" media="print">
+.no-print {
+  display: none;
+}
+</style>
+
+<center>
+  <table summary="" bgcolor="#eeeeee" width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="font-family:Lato,Arial,sans-serif;">
+    <tbody>
+      <tr>
+        <td align="center">
+          <center>
+            <table summary="" cellspacing="0" cellpadding="0" align="center" style="margin-top:0;margin-bottom:0;margin-left:auto;margin-right:auto;max-width:580px;">
+              <tr class="no-print">
+                <td align="center" width="100%" bgcolor="#555555" style="font-size:12px;font-weight:bold;background:#555;color:#fff;text-align:center;padding:10px;font-family:Arial,sans-serif;">
+                  This is a system generated message.
+                </td>
+              </tr>
+
+              <tr class="no-print">
+                <td align="center" width="100%" bgcolor="#EE1C25" style="color:#fff;font-weight:bold;font-size:14px;padding-top:12px;padding-bottom:12px;padding-left:25px;padding-right:25px;">
+                  Vacation Offer | Reservation Confirmation
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="#C23034" style="font-size:3px;height:3px;">&nbsp;</td>
+              </tr>
+
+              <tr class="no-print">
+                <td align="center">
+                  <img src="https://s3-us-west-2.amazonaws.com/a9e7yti-images/${Lookup:Property_look.Header Image}" alt="" style="max-width:580px;margin-left:auto;margin-right:auto;display:block;" width="100%" />
+                </td>
+              </tr>
+
+              <tr>
+                <td valign="top" align="center" bgcolor="#FFFFFF" style="text-align:center;padding:25px;">
+                  <span style="font-weight:normal;font-size:22px;font-weight:300;">
+                    Dear ${Packages.First Name} ${Packages.Spouse First Name},
+                  </span>
+
+                  <br/>
+                  <br/>
+
+                  <table summary="" width="80%" cellpadding="0" cellspacing="0" align="center" style="margin:auto;">
+                    <tbody>
+                      <tr>
+                        <td style="width:18%;" align="left">
+                          <img src="https://s3-us-west-2.amazonaws.com/a9e7yti-images/confirmed_1215tick_00m_1a" style="max-width:50px;padding-right:20px;" width="50" alt="Confirmed" />
+                        </td>
+
+                        <td align="left" style="width:82%;font-size:14px;line-height:1.4em;text-align:left;">
+                          It's our pleasure to inform you that your reservation has been
+                          <span style="color:#2ECC71;">CONFIRMED</span> in
+                          <strong>${Lookup:Property_look.City}, ${Lookup:Property_look.State}</strong>.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+
+              <tr>
+                <td valign="top" bgcolor="#F7F7F7" style="background:#f7f7f7;text-align:center;padding:25px;line-height:20px;">
+                  <table summary="" cellspacing="0" cellpadding="0" style="padding-bottom:15px;" class="responsive-table">
+                    <tr>
+                      <td align="left" style="text-align:left;min-width:200px;padding-right:20px;" class="column">
+                        <span style="color:#999;font-size:11px;line-height:20px;">YOUR RESORT:</span><br/>
+                        <strong style="line-height:22px;display:block;padding-bottom:6px;">${Lookup:Property_look.Hotel Name}</strong>
+                        <span style="font-size:12px;line-height:18px;">
+                          <span style="display:block;">${Lookup:Property_look.Address 1}</span>
+                          <span style="display:block;">${Lookup:Property_look.Address 2}</span>
+                          <span style="display:block;">${Lookup:Property_look.City}, ${Lookup:Property_look.State} ${Lookup:Property_look.Zip}</span>
+                          <span style="display:block;">${Lookup:Property_look.Phone 1}</span>
+                        </span>
+                      </td>
+                      <td class="column">
+                        <table summary="" width="100%" cellspacing="0" cellpadding="0" style="white-space:nowrap;text-align:left;">
+                          <tr>
+                            <th style="border-bottom:1px solid #ddd;padding:10px;background:#f0f0f0;text-align:left;font-size:12px;">Confirmation</th>
+                            <td style="border-bottom:1px solid #ddd;padding:10px;background:#fbfbfb;text-align:left;font-size:12px;">${Packages.Lodging Confirmation Code}</td>
+                          </tr>
+                          <tr>
+                            <th style="border-bottom:1px solid #ddd;padding:10px;background:#f0f0f0;text-align:left;font-size:12px;">Check-in</th>
+                            <td style="border-bottom:1px solid #ddd;padding:10px;background:#fbfbfb;text-align:left;font-size:12px;">${Packages.Arrival}</td>
+                          </tr>
+                          <tr>
+                            <th style="padding:10px;background:#f0f0f0;text-align:left;font-size:12px;">Check-out</th>
+                            <td style="padding:10px;background:#fbfbfb;text-align:left;font-size:12px;">${Packages.Departure}</td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+              <tr class="no-print">
+                <td valign="top" bgcolor="#FFFFFF" style="text-align:center;padding-top:25px;">
+                  <span style="font-weight:normal;font-size:22px;font-weight:300;">See you in ${Lookup:Property_look.City}!</span>
+                  <br/>
+                  <br />
+                  <img src="https://s3-us-west-2.amazonaws.com/a9e7yti-images/${Lookup:Property_look.Footer Image}" alt="&nbsp;" width="100%" style="max-width:580px;margin-left:auto;margin-right:auto;display:block;" />
+                </td>
+              </tr>
+
+              <tr>
+                <td valign="top" bgcolor="#F7F7F7" style="font-size:10px;background: #f7f7f7;line-height:13px;text-align:center;padding-top:25px;padding-bottom:5px;">
+                  <strong style="font-size: 12px;">Offer Terms &amp; Conditions</strong><br/><br/>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top" bgcolor="#F7F7F7" style="background: #f7f7f7;text-align:justify;padding-left:25px;padding-right:25px;padding-bottom:25px;font-size:10px;color:#999;">
+                  ${TC.CustomerCare}
+                  <br/><br/>
+                  ${TC.Promotion}
+                  <br/><br/>
+                  ${TC.Redeemable}
+                  <br/><br/>
+                  ${TC.Incidentals}
+                  ${TC.Restrictions}
+                  ${TC.Rescheduling}
+                  ${TC.Provisions}
+                  <br/><br/>
+                  ${TC.Disclaimer}
+                  <br/><br/>
+                  ${TC.Contact}
+                  <br/><br/>
+                  ${TC.Privacy}
+                </td>
+              </tr>
+
+              <tr class="no-print">
+                <td valign="top" bgcolor="#EE1C25" style="line-height:1.4em;color: #fff;font-size:10px;background:#EE1C25;">
+                  <table summary="" cellpadding="0" cellspacing="0" width="100%" style="width:100%;">
+                    <tbody>
+                      <tr>
+                        <td width="50%" style="color:#fff;font-size:10px;padding:25px;text-align:left;">
+                          This email was delivered to: ${Packages.Email}<br/>
+                          Uniqie Package Identifier: ${Packages.Package Code}
+                        </td>
+
+                        <td width="50%" style="text-align:right;color:#fff;font-size:10px;padding:25px;">
+                          &copy; 2016 Allen Marketing Group<br/>
+                          164 West Center Street<br/>
+                          Cedar City, Utah 84720
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr class="no-print">
+                <td bgcolor="#C23034" style="font-size:8px;height:8px;">&nbsp;</td>
+              </tr>
+            </table>
+          </center>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</center>
