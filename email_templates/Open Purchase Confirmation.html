@@ -1,12 +1,17 @@
-<style type="text/css">
+<style type="text/css" media="screen">
+body, html {
+  margin: 0;
+  padding: 0;
+}
 @media only screen and (max-width: 480px) {
   .responsive-table {
     width: 100% !important;
   }
 
-  .column {
+  .responsive-table tr, .responsive-table td {
     display: block !important;
     padding-bottom: 15px;
+    text-align: center !important;
     width: 100% !important;
   }
 }
@@ -46,7 +51,7 @@
 
               <tr class="no-print">
                 <td align="center">
-                  <img src="https://s3-us-west-2.amazonaws.com/a9e7yti-images/et_u7609_g3277_001_2b_header" alt="" style="max-width:580px;margin-left:auto;margin-right:auto;display:block;" width="100%" />
+                  <img src="https://s3-us-west-2.amazonaws.com/a9e7yti-images/et_u7609_g3277_001_2b_header" alt="" style="margin-left:auto;margin-right:auto;display:block;" width="100%" />
                 </td>
               </tr>
 
@@ -98,7 +103,7 @@
 
                   <table summary="" bgcolor="#fafafa" cellpadding="0" cellspacing="0" width="100%" align="center" style="background:#fafafa;font-size:14px;border-width:1px;border-style:dashed;border-color:#CC3300;padding:20px;border-radius:5px;text-align:center;">
                     <tr>
-                      <td width="49%" style="text-align:left;">
+                      <td width="49%" style="text-align:left;min-width:162px;">
                         <span style="color:#999;font-size:11px;line-height:20px;">DESTINATIONS:</span>
                         <br/>
                         <span style="font-size:12px;line-height:18px;">
@@ -112,7 +117,7 @@
                         </span>
                       </td>
                       <td width="2%">&nbsp;</td>
-                      <td width="49%" style="text-align:left;font-size:11px;">
+                      <td width="49%" style="text-align:left;font-size:11px;min-width:162px;">
                         <span style="color:#999;font-size:11px;line-height:20px;">Your reservation includes the following:</span>
                         <br/>
                         <strong style="line-height:22px;display:block;padding-bottom:6px;">${Packages.Length of Stay}</strong>
@@ -137,7 +142,7 @@
 
                   <table summary="" bgcolor="#fafafa" cellpadding="0" cellspacing="0" width="100%" align="center" style="background:#fafafa;font-size:14px;border-width:1px;border-style:dashed;border-color:#CC3300;padding:20px;border-radius:5px;text-align:center;">
                     <tr>
-                      <td width="49%" style="text-align:left;">
+                      <td width="49%" style="text-align:left;min-width:162px;">
                         <span style="color:#999;font-size:11px;line-height:20px;">COMPLIMENTARY GIFTS:</span>
                         <br/>
                         <span style="font-size:12px;line-height:18px;">
@@ -145,7 +150,7 @@
                         </span>
                       </td>
                       <td width="2%">&nbsp;</td>
-                      <td width="49%" style="text-align:left;font-size:11px;">
+                      <td width="49%" style="text-align:left;font-size:11px;min-width:162px;">
                         <strong style="line-height:22px;">
                           ${Packages.Gifts_new}
                         </strong>
@@ -160,7 +165,7 @@
                   <h3 style="font-size:24px;font-weight:300;line-height:18px;color:#2C3E50;margin:0px;">Thank You!</h3>
                   <span style="color:#999;font-size:11px;line-height:20px;">Your business is greatly appreciated</span>
                   <br/>
-                  <img src="https://s3-us-west-2.amazonaws.com/a9e7yti-images/et_u6014_g2532_001_2b_footer" alt="&nbsp;" width="100%" style="max-width:580px;margin-left:auto;margin-right:auto;display:block;" />
+                  <img src="https://s3-us-west-2.amazonaws.com/a9e7yti-images/et_u6014_g2532_001_2b_footer" alt="&nbsp;" width="100%" style="margin-left:auto;margin-right:auto;display:block;" />
                   <br/>
                   Please contact us soon to reserve your dates.
                   <strong style="line-height:22px;display:block;padding-bottom:6px;">For Questions &amp; Booking Call: 866-551-0868</strong>
@@ -197,12 +202,12 @@
                   <table summary="" cellpadding="0" cellspacing="0" width="100%" style="width:100%;">
                     <tbody>
                       <tr>
-                        <td width="50%" style="color:#fff;font-size:10px;padding:25px;line-height:22px;text-align:left;">
+                        <td width="50%" style="color:#fff;font-size:10px;padding:25px;line-height:22px;text-align:left;min-width:162px;">
                           This email was delivered to: ${Packages.Email}<br/>
                           Confirmation Code: ${Packages.Package Code}
                         </td>
 
-                        <td width="50%" style="text-align:right;color:#fff;font-size:10px;padding:25px;line-height:22px;">
+                        <td width="50%" style="text-align:right;color:#fff;font-size:10px;padding:25px;line-height:22px;min-width:162px;">
                           &copy; 2017 Allen Marketing Group<br/>
                           <span style="color:#444">A fulfillment service company</span>
                         </td>

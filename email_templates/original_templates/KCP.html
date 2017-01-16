@@ -1,12 +1,17 @@
-<style type="text/css">
+<style type="text/css" media="screen">
+body, html {
+  margin: 0;
+  padding: 0;
+}
 @media only screen and (max-width: 480px) {
   .responsive-table {
     width: 100% !important;
   }
 
-  .column {
+  .responsive-table tr, .responsive-table td {
     display: block !important;
     padding-bottom: 15px;
+    text-align: center !important;
     width: 100% !important;
   }
 }
@@ -46,20 +51,20 @@
 
               <tr class="no-print">
                 <td align="center">
-                  <img src="https://s3-us-west-2.amazonaws.com/a9e7yti-images/et_u7609_g3277_001_2b_header" alt="" style="max-width:580px;margin-left:auto;margin-right:auto;display:block;" width="100%" />
+                  <img src="https://s3-us-west-2.amazonaws.com/a9e7yti-images/kc_p0915_g7491_001_3b_header" alt="" style="max-width:580px;margin-left:auto;margin-right:auto;display:block;" width="100%" />
                 </td>
               </tr>
 
               <tr>
                 <td valign="top" align="center" bgcolor="#FFFFFF" style="text-align:center;padding:25px;">
-                  <span style="font-weight:normal;font-size:24px;font-weight:300;">
+                  <span style="font-weight:normal;font-size:22px;font-weight:300;">
                     Dear ${Packages.First Name} ${Packages.Spouse First Name},
                   </span>
 
                   <br/>
                   <br/>
 
-                  <table summary="" width="60%" cellpadding="0" cellspacing="0" align="center" style="margin:auto;">
+                  <table summary="" width="80%" cellpadding="0" cellspacing="0" align="center" style="margin:auto;">
                     <tbody>
                       <tr>
                         <td style="width:18%;" align="left">
@@ -69,7 +74,7 @@
                         <td align="left" style="width:82%;font-size:14px;line-height:1.4em;text-align:left;">
                           It's our pleasure to inform you that your reservation has been
                           <span style="color:#2ECC71;">CONFIRMED</span> in
-                          <strong>${Lookup:Hotel.City}, ${Lookup:Hotel.State}</strong>.
+                          <strong>Orlando, FL</strong>.
                         </td>
                       </tr>
                     </tbody>
@@ -83,11 +88,12 @@
                     <tr>
                       <td align="left" style="text-align:left;min-width:200px;padding-right:20px;" class="column">
                         <span style="color:#999;font-size:11px;line-height:20px;">YOUR RESORT:</span><br/>
-                        <strong style="line-height:22px;display:block;padding-bottom:6px;">${Lookup:Hotel.Hotel Name}</strong>
-                        <span style="font-size:12px;line-height:18px;display:block;">${Lookup:Hotel.Address 1}</span>
-                        <span style="font-size:12px;line-height:18px;display:block;">${Lookup:Hotel.Address 2}</span>
-                        <span style="font-size:12px;line-height:18px;display:block;">${Lookup:Hotel.City}, ${Lookup:Hotel.State}, ${Lookup:Hotel.Zip}</span>
-                        <span style="font-size:12px;line-height:18px;display:block;">${Lookup:Hotel.Phone}</span>
+                        <strong style="line-height:22px;display:block;padding-bottom:6px;">Wyndham Garden Williamsburg Busch Gardens Area</strong>
+                        <span style="font-size:12px;line-height:18px;">
+                          201 Water Country Parkway<br/>
+                          Williamsburg, VA 23185<br/>
+                          (757) 253-6445<br/>
+                        </span>
                       </td>
                       <td class="column">
                         <table summary="" width="100%" cellspacing="0" cellpadding="0" style="white-space:nowrap;text-align:left;">
@@ -96,12 +102,12 @@
                             <td style="border-bottom:1px solid #ddd;padding:10px;background:#fbfbfb;text-align:left;font-size:12px;">${Packages.Lodging Confirmation Code}</td>
                           </tr>
                           <tr>
-                            <th style="border-bottom:1px solid #ddd;padding:10px;background:#f0f0f0;text-align:left;font-size:12px;">Arrival</th>
-                            <td style="border-bottom:1px solid #ddd;padding:10px;background:#fbfbfb;text-align:left;font-size:12px;">${Packages.Arrival}</td>
+                            <th style="border-bottom:1px solid #ddd;padding:10px;background:#f0f0f0;text-align:left;font-size:12px;">Check-in</th>
+                            <td style="border-bottom:1px solid #ddd;padding:10px;background:#fbfbfb;text-align:left;font-size:12px;">${Packages.Arrival} at 3:00 PM</td>
                           </tr>
                           <tr>
-                            <th style="padding:10px;background:#f0f0f0;text-align:left;font-size:12px;">Departure</th>
-                            <td style="padding:10px;background:#fbfbfb;text-align:left;font-size:12px;">${Packages.Departure}</td>
+                            <th style="padding:10px;background:#f0f0f0;text-align:left;font-size:12px;">Check-out</th>
+                            <td style="padding:10px;background:#fbfbfb;text-align:left;font-size:12px;">${Packages.Departure} at 11:00 AM</td>
                           </tr>
                         </table>
                       </td>
@@ -113,62 +119,26 @@
                   <table summary="" bgcolor="#fafafa" cellpadding="0" cellspacing="0" width="100%" align="center" style="background:#fafafa;font-size:14px;border-width:1px;border-style:dashed;border-color:#CC3300;padding:20px;border-radius:5px;text-align:center;">
                     <tr>
                       <td width="49%" style="text-align:left;">
-                        <span style="color:#999;font-size:11px;line-height:20px;">WELCOME CENTER:</span><br/>
-                        <strong style="line-height:22px;display:block;padding-bottom:6px;">${Lookup:Destination.Name}</strong>
-                        <span style="font-size:12px;line-height:18px;display:block;">${Lookup:Destination.Address 1}</span>
-                        <span style="font-size:12px;line-height:18px;display:block;">${Lookup:Destination.Address 2}</span>
-                        <span style="font-size:12px;line-height:18px;display:block;">${Lookup:Destination.City}, ${Lookup:Destination.State}, ${Lookup:Destination.Zip}</span>
-                        <span style="font-size:12px;line-height:18px;display:block;">${Lookup:Destination.Phone}</span>
+                        <span style="color:#999;font-size:11px;line-height:20px;">YOU WILL BE TOURING:</span>
+                        <br/>
+                        <strong style="line-height:22px;display:block;padding-bottom:6px;">Wyndham Garden Williamsburg Busch Gardens Area</strong>
+                        <span style="font-size:12px;line-height:18px;">
+                          201 Water Country Parkway<br/>
+                          Williamsburg, VA 23185<br/>
+                          (757) 253-6445<br/>
+                        </span>
                         <br/>
                         <span style="color:#999;font-size:11px;line-height:20px;">SCHEDULED TOUR TIME:</span><br/>
                         <span style="font-size:12px;line-height:18px;">
                           <strong>**/**/**** @ **:** AM/PM</strong><br>
-                          (Tour time will be set at check-in.)<br>
-                        </span>
-                        <br/>
-                        <span style="color:#999;font-size:11px;line-height:20px;">TOUR ACCOUNT NUMBER:</span><br/>
-                        <span style="font-size:12px;line-height:18px;">
-                          **********
                         </span>
                       </td>
                       <td width="2%">&nbsp;</td>
                       <td width="49%" style="text-align: left;font-size:11px;">
-                        <strong>MAYBE THIS INFO SHOULD BE STORED ON THE DESTINATION MODULE?</strong><br/><br/>
-
-                        Please be advised,
-                        you must go to the Welcome Center prior to checking
-                        into your hotel in order to be provided with your
-                        room check-in voucher. Do not go directly to your
-                        accommodations unless told to do so. If you will be
-                        arriving after the Welcome Center closes please call
-                        1-800-780-4200 at least three days prior to your
-                        scheduled arrival to arrange a late arrival. If you
-                        experience delays on your arrival date, please call
-                        your Welcome Center directly prior to close of
-                        business. Failure to contact the Welcome Center will
-                        result in the cancellation of your reservation.
-                        Welcome Center hours vary by location and can be
-                        found by visiting:
-                        <a href="http://www.mywelcomecenter.com">www.mywelcomecenter.com</a>
-                        <br/>
-                        <br/>
-                        Please be advised,
-                        you must travel with your spouse. Failure to attend
-                        sales presentation will result in the full cost of
-                        the stay being charged to the card on file as per the
-                        original terms &amp; conditions of this package.
-                        Presentations typically last 120 minutes and food is
-                        not served. Presentations educate guests on the
-                        benefits of vacation ownership. Plan to arrive early
-                        to avoid traffic. Presentations start promptly at the
-                        scheduled time. Late guests are rescheduled for a
-                        later time the next day. Children seven and up may
-                        attend the presentation. Children six and under must
-                        stay in a supervised area during the group portion of
-                        the presentation. Transportation to the touring
-                        location is not included. Any complimentary gifts
-                        will be express mailed to the address on file upon
-                        confirmation of tour completion.
+                        Failure to attend sales presentation will result in the full cost of the stay being charged
+                        to the card on file as per the original terms &amp; conditions of this package.
+                        Gifting is not provided by the on-site sales center and will be express mailed
+                        to the address on file upon successful tour completion.
                       </td>
                     </tr>
                   </table>
@@ -177,9 +147,10 @@
 
               <tr class="no-print">
                 <td valign="top" bgcolor="#FFFFFF" style="text-align:center;padding-top:25px;">
-                  <h3 style="font-size:24px;font-weight:300;line-height:18px;color:#2C3E50;margin:0px;">See you in Orlando!</h3>
+                  <span style="font-weight:normal;font-size:22px;font-weight:300;">See you in Williamsburg!</span>
                   <br/>
-                  <img src="https://s3-us-west-2.amazonaws.com/a9e7yti-images/et_u6014_g2532_001_2b_footer" alt="&nbsp;" width="100%" style="max-width:580px;margin-left:auto;margin-right:auto;display:block;" />
+                  <br />
+                  <img src="https://s3-us-west-2.amazonaws.com/a9e7yti-images/kc_p0873_g8975_001_3b_footer" alt="&nbsp;" width="100%" style="max-width:580px;margin-left:auto;margin-right:auto;display:block;" />
                 </td>
               </tr>
 

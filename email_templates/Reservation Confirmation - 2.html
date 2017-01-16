@@ -1,12 +1,17 @@
-<style type="text/css">
+<style type="text/css" media="screen">
+body, html {
+  margin: 0;
+  padding: 0;
+}
 @media only screen and (max-width: 480px) {
   .responsive-table {
     width: 100% !important;
   }
 
-  .column {
+  .responsive-table tr, .responsive-table td {
     display: block !important;
     padding-bottom: 15px;
+    text-align: center !important;
     width: 100% !important;
   }
 }
@@ -114,29 +119,31 @@
 
                   <table summary="" bgcolor="#fafafa" cellpadding="0" cellspacing="0" width="100%" align="center" style="background:#fafafa;font-size:14px;border-width:1px;border-style:dashed;border-color:#CC3300;padding:20px;border-radius:5px;text-align:center;">
                     <tr>
-                      <td width="49%" style="text-align:left;">
+                      <td width="49%" style="text-align:left;min-width:162px;">
                         <span style="color:#999;font-size:11px;line-height:20px;">YOU WILL BE TOURING:</span>
                         <br/>
-                        <strong style="line-height:22px;display:block;padding-bottom:6px;">${Lookup:Property_look.Welcome Center}</strong>
+                        <strong style="line-height:22px;display:block;padding-bottom:6px;">${Lookup:LV_Tour Vendor_look.Tour Name}</strong>
                         <span style="font-size:12px;line-height:18px;">
-                          <span style="display:block;">${Lookup:Property_look.WC Address 1}</span>
-                          <span style="display:block;">${Lookup:Property_look.WC Address 2}</span>
-                          <span style="display:block;">${Lookup:Property_look.WC Address 2}</span>
-                          <span style="display:block;">${Lookup:Property_look.WC City}, ${Lookup:Property_look.WC State} ${Lookup:Property_look.WC Zip}</span>
-                          <span style="display:block;">${Lookup:Property_look.Phone 1}</span>
+                          <span style="display:block;">${Lookup:LV_Tour Vendor_look.Address 1}</span>
+                          <span style="display:block;">${Lookup:LV_Tour Vendor_look.Address 2}</span>
+                          <span style="display:block;">${Lookup:LV_Tour Vendor_look.Address 3}</span>
+                          <span style="display:block;">${Lookup:LV_Tour Vendor_look.City}, ${Lookup:LV_Tour Vendor_look.State} ${Lookup:LV_Tour Vendor_look.Zip}</span>
+                          <span style="display:block;">${Lookup:LV_Tour Vendor_look.Phone}</span>
                         </span>
                         <br/>
                         <span style="color:#999;font-size:11px;line-height:20px;">SCHEDULED TOUR TIME:</span><br/>
                         <span style="font-size:12px;line-height:18px;">
-                          <strong>**/**/**** @ **:** AM/PM</strong><br>
+                          <strong>${Packages.Scheduled Tour Date} @ ${Packages.Scheduled Tour Time}</strong><br>
                         </span>
                       </td>
                       <td width="2%">&nbsp;</td>
-                      <td width="49%" style="text-align: left;font-size:11px;">
-                        Failure to attend sales presentation will result in the full cost of the stay being charged
-                        to the card on file as per the original terms &amp; conditions of this package.
-                        Gifting is not provided by the on-site sales center and will be express mailed
-                        to the address on file upon successful tour completion.
+                      <td width="49%" style="text-align:left;font-size:11px;min-width:162px;">
+                        ${Lookup:LV_Tour Vendor_look.Terms 1}
+
+                        <br/>
+                        <br/>
+
+                        ${Lookup:LV_Tour Vendor_look.Terms 2}
                       </td>
                     </tr>
                   </table>
@@ -148,7 +155,7 @@
                   <span style="font-weight:normal;font-size:22px;font-weight:300;">See you in ${Lookup:Property_look.City}!</span>
                   <br/>
                   <br />
-                  <img src="https://s3-us-west-2.amazonaws.com/a9e7yti-images/${Lookup:Property_look.Footer Image}" alt="&nbsp;" width="100%" style="max-width:580px;margin-left:auto;margin-right:auto;display:block;" />
+                  <img src="https://s3-us-west-2.amazonaws.com/a9e7yti-images/${Lookup:Property_look.Footer Image}" alt="&nbsp;" width="100%" style="margin-left:auto;margin-right:auto;display:block;" />
                 </td>
               </tr>
 
@@ -183,12 +190,12 @@
                   <table summary="" cellpadding="0" cellspacing="0" width="100%" style="width:100%;">
                     <tbody>
                       <tr>
-                        <td width="50%" style="color:#fff;font-size:10px;padding:25px;line-height:22px;text-align:left;">
+                        <td width="50%" style="color:#fff;font-size:10px;padding:25px;line-height:22px;text-align:left;min-width:162px;">
                           This email was delivered to: ${Packages.Email}<br/>
                           Confirmation Code: ${Packages.Package Code}
                         </td>
 
-                        <td width="50%" style="text-align:right;color:#fff;font-size:10px;padding:25px;line-height:22px;">
+                        <td width="50%" style="text-align:right;color:#fff;font-size:10px;padding:25px;line-height:22px;min-width:162px;">
                           &copy; 2017 Allen Marketing Group<br/>
                           <span style="color:#444">A fulfillment service company</span>
                         </td>

@@ -1,12 +1,17 @@
-<style type="text/css">
+<style type="text/css" media="screen">
+body, html {
+  margin: 0;
+  padding: 0;
+}
 @media only screen and (max-width: 480px) {
   .responsive-table {
     width: 100% !important;
   }
 
-  .column {
+  .responsive-table tr, .responsive-table td {
     display: block !important;
     padding-bottom: 15px;
+    text-align: center !important;
     width: 100% !important;
   }
 }
@@ -150,7 +155,7 @@
 
                   <table summary="" bgcolor="#fafafa" cellpadding="0" cellspacing="0" width="100%" align="center" style="background:#fafafa;font-size:14px;border-width:1px;border-style:dashed;border-color:#CC3300;padding:20px;border-radius:5px;text-align:center;">
                     <tr>
-                      <td width="49%" style="text-align:left;">
+                      <td width="49%" style="text-align:left;min-width:162px;">
                         <span style="color:#999;font-size:11px;line-height:20px;">TOUR CENTER:</span>
                         <br/>
                         <strong style="line-height:22px;display:block;padding-bottom:6px;">${Lookup:Property_look.Tour Center}</strong>
@@ -173,7 +178,7 @@
                         </span>
                       </td>
                       <td width="2%">&nbsp;</td>
-                      <td width="49%" style="text-align: left;font-size:11px;">
+                      <td width="49%" style="text-align:left;font-size:11px;min-width:162px;">
                         Please be advised,
                         you must travel with your spouse. Failure to attend
                         sales presentation will result in the full cost of
