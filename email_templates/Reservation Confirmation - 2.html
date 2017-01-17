@@ -45,13 +45,14 @@ body, html {
                   Vacation Offer | Reservation and Tour Confirmation
                 </td>
               </tr>
+
               <tr>
                 <td bgcolor="#C23034" style="font-size:3px;height:3px;">&nbsp;</td>
               </tr>
 
               <tr class="no-print">
                 <td align="center">
-                  <img src="https://s3-us-west-2.amazonaws.com/a9e7yti-images/${Lookup:Property_look.Header Image}" alt="" style="max-width:580px;margin-left:auto;margin-right:auto;display:block;" width="100%" />
+                  <img src="https://s3-us-west-2.amazonaws.com/a9e7yti-images/${Lookup:Confirmed Property.Header Image}" alt="" style="max-width:580px;margin-left:auto;margin-right:auto;display:block;" width="100%" />
                 </td>
               </tr>
 
@@ -74,7 +75,7 @@ body, html {
                         <td align="left" style="width:82%;font-size:14px;line-height:1.4em;text-align:left;">
                           It's our pleasure to inform you that your reservation has been
                           <span style="color:#2ECC71;">CONFIRMED</span> in
-                          <strong>${Lookup:Property_look.City}, ${Lookup:Property_look.State}</strong>.
+                          <strong>${Lookup:Confirmed Property.City}, ${Lookup:Confirmed Property.State}</strong>.
                         </td>
                       </tr>
                     </tbody>
@@ -88,12 +89,12 @@ body, html {
                     <tr>
                       <td align="left" style="text-align:left;min-width:200px;padding-right:20px;" class="column">
                         <span style="color:#999;font-size:11px;line-height:20px;text-transform:uppercase;">Your Accommodations:</span><br/>
-                        <strong style="line-height:22px;display:block;padding-bottom:6px;">${Lookup:Property_look.Hotel Name}</strong>
+                        <strong style="line-height:22px;display:block;padding-bottom:6px;">${Lookup:Confirmed Property.Hotel Name}</strong>
                         <span style="font-size:12px;line-height:18px;">
-                          <span style="display:block;">${Lookup:Property_look.Address 1}</span>
-                          <span style="display:block;">${Lookup:Property_look.Address 2}</span>
-                          <span style="display:block;">${Lookup:Property_look.City}, ${Lookup:Property_look.State} ${Lookup:Property_look.Zip}</span>
-                          <span style="display:block;">${Lookup:Property_look.Phone 1}</span>
+                          <span style="display:block;">${Lookup:Confirmed Property.Address 1}</span>
+                          <span style="display:block;">${Lookup:Confirmed Property.Address 2}</span>
+                          <span style="display:block;">${Lookup:Confirmed Property.City}, ${Lookup:Confirmed Property.State} ${Lookup:Confirmed Property.Zip}</span>
+                          <span style="display:block;">${Lookup:Confirmed Property.Phone 1}</span>
                         </span>
                       </td>
                       <td class="column">
@@ -122,13 +123,13 @@ body, html {
                       <td width="49%" style="text-align:left;min-width:162px;">
                         <span style="color:#999;font-size:11px;line-height:20px;">YOU WILL BE TOURING:</span>
                         <br/>
-                        <strong style="line-height:22px;display:block;padding-bottom:6px;">${Lookup:LV_Tour Vendor_look.Tour Name}</strong>
+                        <strong style="line-height:22px;display:block;padding-bottom:6px;">${Lookup:Confirmed LV Tour.Tour Name}</strong>
                         <span style="font-size:12px;line-height:18px;">
-                          <span style="display:block;">${Lookup:LV_Tour Vendor_look.Address 1}</span>
-                          <span style="display:block;">${Lookup:LV_Tour Vendor_look.Address 2}</span>
-                          <span style="display:block;">${Lookup:LV_Tour Vendor_look.Address 3}</span>
-                          <span style="display:block;">${Lookup:LV_Tour Vendor_look.City}, ${Lookup:LV_Tour Vendor_look.State} ${Lookup:LV_Tour Vendor_look.Zip}</span>
-                          <span style="display:block;">${Lookup:LV_Tour Vendor_look.Phone}</span>
+                          <span style="display:block;">${Lookup:Confirmed LV Tour.Address 1}</span>
+                          <span style="display:block;">${Lookup:Confirmed LV Tour.Address 2}</span>
+                          <span style="display:block;">${Lookup:Confirmed LV Tour.Address 3}</span>
+                          <span style="display:block;">${Lookup:Confirmed LV Tour.City}, ${Lookup:Confirmed LV Tour.State} ${Lookup:Confirmed LV Tour.Zip}</span>
+                          <span style="display:block;">${Lookup:Confirmed LV Tour.Phone}</span>
                         </span>
                         <br/>
                         <span style="color:#999;font-size:11px;line-height:20px;">SCHEDULED TOUR TIME:</span><br/>
@@ -138,12 +139,12 @@ body, html {
                       </td>
                       <td width="2%">&nbsp;</td>
                       <td width="49%" style="text-align:left;font-size:11px;min-width:162px;">
-                        ${Lookup:LV_Tour Vendor_look.Terms 1}
+                        ${Lookup:Confirmed LV Tour.Terms 1}
 
                         <br/>
                         <br/>
 
-                        ${Lookup:LV_Tour Vendor_look.Terms 2}
+                        ${Lookup:Confirmed LV Tour.Terms 2}
                       </td>
                     </tr>
                   </table>
@@ -152,18 +153,19 @@ body, html {
 
               <tr class="no-print">
                 <td valign="top" bgcolor="#FFFFFF" style="text-align:center;padding-top:25px;">
-                  <span style="font-weight:normal;font-size:22px;font-weight:300;">See you in ${Lookup:Property_look.City}!</span>
+                  <span style="font-weight:normal;font-size:22px;font-weight:300;">See you in ${Lookup:Confirmed Property.City}!</span>
                   <br/>
                   <br />
-                  <img src="https://s3-us-west-2.amazonaws.com/a9e7yti-images/${Lookup:Property_look.Footer Image}" alt="&nbsp;" width="100%" style="margin-left:auto;margin-right:auto;display:block;" />
+                  <img src="https://s3-us-west-2.amazonaws.com/a9e7yti-images/${Lookup:Confirmed Property.Footer Image}" alt="&nbsp;" width="100%" style="margin-left:auto;margin-right:auto;display:block;" />
                 </td>
               </tr>
 
               <tr>
-                <td valign="top" bgcolor="#F7F7F7" style="font-size:10px;background: #f7f7f7;line-height:13px;text-align:center;padding-top:25px;padding-bottom:5px;">
-                  <strong style="font-size: 12px;">Offer Terms &amp; Conditions</strong><br/><br/>
+                <td valign="top" bgcolor="#F7F7F7" style="font-size:10px;background:#f7f7f7;line-height:13px;text-align:center;padding-top:25px;padding-bottom:25px;">
+                  <span style="font-size:12px;">Vacation Offer | <strong>Offer Terms &amp; Conditions</strong></span>
                 </td>
               </tr>
+
               <tr>
                 <td valign="top" bgcolor="#F7F7F7" style="background: #f7f7f7;text-align:justify;padding-left:25px;padding-right:25px;padding-bottom:25px;font-size:10px;color:#999;">
                   ${TC.CustomerCare}
