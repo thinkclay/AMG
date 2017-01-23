@@ -45,7 +45,7 @@ body, html {
                   Vacation Offer | Purchase Confirmation
                 </td>
               </tr>
-              
+
               <tr>
                 <td bgcolor="#C23034" style="font-size:3px;height:3px;">&nbsp;</td>
               </tr>
@@ -58,12 +58,9 @@ body, html {
 
               <tr>
                 <td valign="top" align="center" bgcolor="#FFFFFF" style="text-align:center;padding:25px;">
-                  <span style="font-weight:normal;font-size:22px;font-weight:300;">
-                    Dear ${Packages.First Name} ${Packages.Spouse First Name},
+                  <span style="display:block;font-weight:normal;font-size:22px;font-weight:300;border-bottom:1px solid #eee;padding-bottom:10px;margin-bottom:20px;">
+                    ${Packages.First Name} ${Packages.Spouse First Name}
                   </span>
-
-                  <br/>
-                  <br/>
 
                   <span style="font-weight:400;font-size:14px;line-height:22px;">
                     We are excited for the opportunity to introduce you to fabulous Las Vegas, Nevada.
@@ -75,53 +72,103 @@ body, html {
 
               <tr>
                 <td valign="top" bgcolor="#F7F7F7" style="background:#f7f7f7;text-align:center;padding:25px;line-height:20px;">
-                  <strong style="line-height:22px;display:block;padding-bottom:6px;">Please review the following reservation information carefully:</strong>
-                  <span style="color:#999;font-size:11px;line-height:14px;">This will appear on your billing statement as:</span>
-                  <br/>
-                  <strong style="display:block;">Allen Marketing Group</strong>
-                  <span style="font-size:11px;">(Servicer of this Package)</span>
+                  <span style="line-height:22px;display:block;padding-bottom:6px;">
+                    Vacation Offer | <strong>Details</strong> :
+                  </span>
+                  <span style="color:#999;font-size:11px;line-height:20px;text-transform:uppercase;">
+                    Please review the below information carefully
+                  </span>
+
                   <br/>
                   <br/>
 
-                  <table summary="" width="100%" cellspacing="0" cellpadding="0" style="white-space:nowrap;text-align:left;">
+                  <table summary="" bgcolor="#fafafa" cellpadding="0" cellspacing="0" width="100%" align="center" style="background:#fafafa;font-size:14px;border-width:1px;border-style:dashed;border-color:#CC3300;padding:15px;border-radius:5px;text-align:center;">
                     <tr>
-                      <th style="border-bottom:1px solid #ddd;padding:10px;background:#f0f0f0;text-align:left;font-size:12px;">Package Confirmation</th>
-                      <td style="border-bottom:1px solid #ddd;padding:10px;background:#fbfbfb;text-align:left;font-size:12px;">${Packages.Package Code}</td>
-                    </tr>
-                    <tr>
-                      <th style="border-bottom:1px solid #ddd;padding:10px;background:#f0f0f0;text-align:left;font-size:12px;">Credit Card Confirmation</th>
-                      <td style="border-bottom:1px solid #ddd;padding:10px;background:#fbfbfb;text-align:left;font-size:12px;">${Packages.Authorization Code}</td>
+                      <td width="100%" align="left" style="text-align:left;font-size:12px;line-height:18px;min-width:162px;padding:10px;">
+                        <table summary="" width="100%" cellspacing="0" cellpadding="0" style="white-space:nowrap;text-align:left;">
+                          <tr>
+                            <th style="border-bottom:1px solid #ddd;padding-top:10px;padding-bottom:10px;text-align:left;padding-right:10px;font-size:12px;">Package Confirmation</th>
+                            <td style="border-bottom:1px solid #ddd;padding-top:10px;padding-bottom:10px;text-align:left;padding-right:10px;font-size:12px;">${Packages.Package Code}</td>
+                          </tr>
+                          <tr>
+                            <th style="border-bottom:1px solid #ddd;padding-top:10px;padding-bottom:10px;text-align:left;padding-right:10px;font-size:12px;">Credit Card Confirmation</th>
+                            <td style="border-bottom:1px solid #ddd;padding-top:10px;padding-bottom:10px;text-align:left;padding-right:10px;font-size:12px;">${Packages.Authorization Code}</td>
+                          </tr>
+                          <tr>
+                            <th style="border-bottom:1px solid #ddd;padding-top:10px;padding-bottom:10px;text-align:left;padding-right:10px;font-size:12px;">Length of Stay</th>
+                            <td style="border-bottom:1px solid #ddd;padding-top:10px;padding-bottom:10px;text-align:left;padding-right:10px;font-size:12px;">${Packages.Length of Stay}</td>
+                          </tr>
+                          <tr>
+                            <th style="border-bottom:1px solid #ddd;padding-top:10px;padding-bottom:10px;text-align:left;padding-right:10px;font-size:12px;">Travel Time</th>
+                            <td style="border-bottom:1px solid #ddd;padding-top:10px;padding-bottom:10px;text-align:left;padding-right:10px;font-size:12px;">You have 36 months to complete travel</td>
+                          </tr>
+                          <tr>
+                            <th style="padding-top:10px;text-align:left;padding-right:10px;font-size:12px;">Valid Until</th>
+                            <td style="padding-top:10px;text-align:left;padding-right:10px;font-size:12px;">${Packages.Package Exp. Date}</td>
+                          </tr>
+                        </table>
+                      </td>
                     </tr>
                   </table>
 
                   <br/>
+
+                  <table summary="" bgcolor="#fafafa" cellpadding="0" cellspacing="0" width="100%" align="center" style="background:#fafafa;font-size:14px;border-width:1px;border-style:dashed;border-color:#CC3300;padding:15px;border-radius:5px;text-align:center;">
+                    <tr>
+                      <td align="left" colspan="2" style="border-bottom-color:#eee;border-bottom-width:1px;border-bottom-style:solid;text-align:left;min-width:162px;padding:10px;padding-bottom:15px;">
+                        <span style="color:#999;font-size:11px;line-height:20px;text-transform:uppercase;">
+                          This will appear on your billing statement as:
+                        </span>
+                        <br/>
+                        <strong style="line-height:22px;">
+                          Allen Marketing Group
+                          <span style="font-weight:normal;padding-left:10px;">(service provider of your package)</span>
+                        </strong>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="left" width="100px" style="text-align:left;min-width:100px;padding:10px;padding-top:20px;padding-right:20px;">
+                        <img src="https://s3-us-west-2.amazonaws.com/a9e7yti-images/customer-care.png" alt="" width="100" style="width:100px;" />
+                      </td>
+                      <td width="100%" align="left" style="text-align:left;font-size:12px;line-height:18px;min-width:162px;padding:10px;">
+                        <span style="display:block;color:#999;font-size:11px;line-height:20px;padding-bottom:5px;">To book your dates | to ask questions</span>
+                        Customer Care is available Monday through Friday from 9 AM to 5 PM Mountain Standard Time by dialing: <strong>866-551-0868</strong> or by email at <strong>reservations@allenmg.com</strong>.
+                      </td>
+                    </tr>
+                  </table>
+
                   <br/>
 
-                  <strong style="line-height:22px;display:block;">
-                    In addition to your stay, we will provide you with the following gifts:
-                  </strong>
-                  <span style="color:#999;font-size:11px;line-height:20px;display:block;padding-bottom:10px;">
-                    (These are given at the end of the presentation)
-                  </span>
-
-                  <table summary="" bgcolor="#fafafa" cellpadding="0" cellspacing="0" width="100%" align="center" style="background:#fafafa;font-size:14px;border-width:1px;border-style:dashed;border-color:#CC3300;padding:20px;border-radius:5px;text-align:center;">
+                  <table summary="" bgcolor="#fafafa" cellpadding="0" cellspacing="0" width="100%" align="center" style="background:#fafafa;font-size:14px;border-width:1px;border-style:dashed;border-color:#CC3300;padding:15px;border-radius:5px;text-align:center;">
                     <tr>
-                      <td valign="top" width="49%" style="text-align:left;min-width:162px;">
-                        <span style="color:#999;font-size:11px;line-height:20px;">COMPLIMENTARY GIFTS:</span>
+                      <td align="left" style="border-bottom-color:#eee;border-bottom-width:1px;border-bottom-style:solid;text-align:left;min-width:162px;padding:10px;padding-bottom:15px;">
+                        <strong style="line-height:22px;display:block;">
+                          In addition to your stay, we will provide you with the following gifts:
+                        </strong>
+                        <span style="color:#999;font-size:11px;line-height:20px;text-transform:uppercase;">
+                          Complimentary Gifts:
+                          <span style="text-transform:lowercase;padding-left:5px;">(Given at the end of the presentation)</span>
+                        </span>
                         <br/>
-                        <strong style="font-size:11px;line-height:22px;">
+                        <br/>
+                        <strong style="line-height:22px;">
                           ${Packages.Gifts_new}
                         </strong>
                       </td>
-                      <td width="2%">&nbsp;</td>
-                      <td valign="top" width="49%" style="text-align:left;font-size:11px;min-width:162px;">
-                        <span style="color:#999;font-size:11px;line-height:20px;">Your reservation includes the following:</span>
-                        <br/>
-                        <strong style="line-height:22px;display:block;padding-bottom:6px;">${Packages.Length of Stay}</strong>
-                        <br/>
-                        <span style="color:#999;font-size:11px;line-height:20px;">This package is valid ${Packages.TravelTime(Months)} months from the date of purchase:</span>
-                        <br/>
-                        <strong style="line-height:22px;display:block;padding-bottom:6px;">${Packages.Date Sold}</strong>
+                    </tr>
+                    <tr>
+                      <td>
+                        <table summary="" cellpadding="0" cellspacing="0" width="100%">
+                          <tr>
+                            <td align="left" width="100px" style="text-align:left;min-width:100px;padding:10px;padding-top:20px;padding-right:20px;">
+                              <img src="https://s3-us-west-2.amazonaws.com/a9e7yti-images/lv_y7361_g3614_001_1c_vbc" alt="" width="100" style="width:100px;" />
+                            </td>
+                            <td width="100%" align="left" style="text-align:left;font-size:12px;line-height:18px;min-width:162px;padding:10px;">
+                              <a href="http://www.vegasbitecard.com/" style="display:block;color:#999;font-size:11px;line-height:20px;text-transform:uppercase;padding-bottom:5px;">Vegas Bite Card</a>
+                              The Vegas Bite Card provides you with incredible discounts and VIP access to shows, shopping, local attractions, and transportation!
+                            </td>
+                          </tr>
+                        </table>
                       </td>
                     </tr>
                   </table>
