@@ -121,9 +121,11 @@ body, html {
                   <table summary="" bgcolor="#fbfbfb" cellpadding="0" cellspacing="0" width="100%" align="center" style="background:#fbfbfb;font-size:14px;border-width:1px;border-style:dashed;border-color:#CC3300;padding:20px;border-radius:5px;text-align:center;">
                     <tr>
                       <td width="49%" style="text-align:left;">
-                        <span style="color:#999;font-size:11px;line-height:20px;">WELCOME CENTER:</span>
-                        <br/>
-                        <strong style="line-height:22px;display:block;padding-bottom:6px;">${Lookup:Confirmed Property.Welcome Center}</strong>
+                        <span style="color:#999;font-size:11px;line-height:20px;display:block;">WELCOME CENTER:</span>
+                        <span style="color:#999;font-size:11px;line-height:20px;display:block;padding-bottom:5px;">(Go here prior to check-in)</span>
+                        <strong style="line-height:22px;display:block;padding-bottom:6px;">
+                          ${Lookup:Confirmed Property.Welcome Center}
+                        </strong>
                         <span style="font-size:12px;line-height:18px;">
                           <span style="display:block;">${Lookup:Confirmed Property.WC Address 1}</span>
                           <span style="display:block;">${Lookup:Confirmed Property.WC Address 2}</span>
